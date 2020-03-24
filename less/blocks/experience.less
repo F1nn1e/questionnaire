@@ -1,0 +1,88 @@
+.experience{
+  max-width: 692px;
+
+  &__list{
+    .list-clear();
+    display: flex;
+    flex-wrap:wrap;
+    margin-bottom: -16px;
+  }
+
+  &__item{
+    display: flex;
+    width:40%;
+    margin-bottom: 16px;
+    @media (max-width: @desktop-width){
+      width: 50%;
+    }
+
+    @media (max-width: 440px){
+      width: 100%;
+    }
+
+
+    &:nth-child(3n){
+      width: 20%;
+      @media (max-width: @desktop-width){
+        width: 50%;
+      }
+
+      @media (max-width: 440px){
+        width: 100%;
+      }
+    }
+
+  }
+
+  &__checkbox{
+    -webkit-appearance: none;
+    margin: 0;
+    margin-right: 12px;
+    background-color: transparent;
+    width: 20px;
+    height: 20px;
+
+    border: 1px solid #435993;
+    box-sizing: border-box;
+    border-radius: 3px;
+    outline: none;
+
+    &:hover{
+      background-color: #E9EFFF;
+    }
+
+    &:checked {
+      background-color: #435993;
+
+      +label {
+        position: relative;
+        &:before {
+          position: absolute;
+          top: 6px;
+          left: -29px;
+          content: "";
+          display: block;
+          width: 14px;
+          height: 9px;
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-image: url("../icons/icon-checked.svg");
+        }
+
+
+      }
+    }
+  }
+
+  &__label{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #000000
+  }
+
+
+}

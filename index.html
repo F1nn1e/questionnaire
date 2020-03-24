@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" href="css/style.min.css"/>
+    <script type="text/javascript" src="js/jquery.min.js"> </script>
+    <script type="text/javascript" src="js/main.min.js"> </script>
+    <title>w-m_frontend-test</title>
+</head>
+
+<body class="home">
+<header class="container main-header">
+    <div class="main-header__mobile-toggle">+ Открыть меню</div>
+    <ul class="main-header__list">
+        <li class="main-header__item main-header__item--current">
+            <a class="main-header__link">Личная информация</a>
+        </li>
+        <li class="main-header__item">
+            <a class="main-header__link">Опыт</a>
+        </li>
+        <li class="main-header__item">
+            <a class="main-header__link">JavaScript</a>
+        </li>
+        <li class="main-header__item">
+            <a class="main-header__link">О себе</a>
+        </li>
+    </ul>
+</header>
+<main>
+    <section class="container home__header">
+        <h1 class="home__header-title"> Анкета </h1>
+        <div class="home__header-layout"></div>
+    </section>
+
+    <section class="container home__section home__section-info">
+        <img class="home__section-icon" src="icons/icon-info.svg">
+        <h2 class="home__section-title">Личная информация</h2>
+        <label class="custom-input__block">
+            <span class="custom-input__label" for="name">
+                ФИО
+            </span>
+            <input type="text" name="name" id="name" class="custom-input__field">
+        </label>
+        <label class="custom-input__block custom-input__block--select">
+            <span class="custom-input__label" for="are">
+                Год рождения
+            </span>
+            <input type="text" name="are" id="are" class="custom-input__field" disabled>
+            <div class="custom-input__select">
+                <ul class="custom-input__select-list">
+                    <li class="custom-input__select-item">2001</li>
+                    <li class="custom-input__select-item">2000</li>
+                    <li class="custom-input__select-item">1999</li>
+                    <li class="custom-input__select-item">1998</li>
+                    <li class="custom-input__select-item">1997</li>
+                    <li class="custom-input__select-item">1996</li>
+                    <li class="custom-input__select-item">1995</li>
+                    <li class="custom-input__select-item">1994</li>
+                    <li class="custom-input__select-item">1993</li>
+                    <li class="custom-input__select-item">1992</li>
+                    <li class="custom-input__select-item">1991</li>
+                </ul>
+
+            </div>
+        </label>
+        <label class="custom-input__block">
+            <span class="custom-input__label" for="city">
+                Место проживания
+            </span>
+            <input type="text" name="city" id="city" class="custom-input__field">
+        </label>
+        <label class="custom-input__block">
+            <span class="custom-input__label" for="skype">
+                Skype
+            </span>
+            <input type="text" name="skype" id="skype" class="custom-input__field">
+        </label>
+        <label class="custom-input__block">
+            <span class="custom-input__label" for="email">
+                E-mail
+            </span>
+            <input type="text" name="emaile" id="email" class="custom-input__field">
+        </label>
+
+
+    </section>
+
+    <section class="container home__section experience">
+        <img class="home__section-icon" src="icons/icon-experience.svg">
+        <h2 class="home__section-title">Расскажите о своем опыте</h2>
+        <ul class="experience__list">
+            <li class="experience__item">
+                <input type="checkbox" id="scales" name="scales" class="experience__checkbox">
+                <label for="scales" class="experience__label">БЭМ/OOCSS</label>
+            </li>
+            <li class="experience__item">
+                <input type="checkbox" id="semantic" name="semantic" class="experience__checkbox">
+                <label for="semantic" class="experience__label">Верстаю семантично</label>
+            </li>
+            <li class="experience__item">
+                <input type="checkbox" id="webpack" name="webpack" class="experience__checkbox">
+                <label for="webpack" class="experience__label">Webpack</label>
+            </li>
+            <li class="experience__item">
+                <input type="checkbox" id="less" name="less" class="experience__checkbox">
+                <label for="less" class="experience__label">Stylus/LESS/SASS</label>
+            </li>
+            <li class="experience__item">
+                <input type="checkbox" id="ES" name="ES" class="experience__checkbox">
+                <label for="ES" class="experience__label">ES2015/ES2016</label>
+            </li>
+            <li class="experience__item">
+                <input type="checkbox" id="jquery" name="jquery" class="experience__checkbox">
+                <label for="jquery" class="experience__label">jQuery</label>
+            </li>
+            <li class="experience__item">
+                <input type="checkbox" id="svg" name="svg" class="experience__checkbox">
+                <label for="svg" class="experience__label">Работаю с SVG</label>
+            </li>
+            <li class="experience__item">
+                <input type="checkbox" id="gulp" name="gulp" class="experience__checkbox">
+                <label for="gulp" class="experience__label">Gulp/GRUNT</label>
+            </li>
+            <li class="experience__item">
+                <input type="checkbox" id="git" name="git" class="experience__checkbox">
+                <label for="git" class="experience__label">Ипользую Git</label>
+            </li>
+        </ul>
+
+
+
+    </section>
+
+    <section class="container home__section javascript">
+        <img class="home__section-icon" src="icons/icon-js.svg">
+        <h2 class="home__section-title">Уровень владения JavaScript</h2>
+
+
+    </section>
+
+    <section class="container home__section about">
+        <img class="home__section-icon" src="icons/icon-about-2.svg">
+        <h2 class="home__section-title">Расскажите о себе</h2>
+        <label for="about">
+            <p class="about__text">Напишите несколько предложений, чем привлекла наша вакансия и что вы ожидаете от работы у нас.</p>
+        </label>
+
+        <textarea id="about" name="about" placeholder="Понравилась тем, что..." class="custom-input__textarea"></textarea>
+
+        <input type="submit" name="form_sent" value="Готово" class="custom-input__button about__button">
+
+
+    </section>
+</main>
+</body>
+</html>
